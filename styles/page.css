@@ -1,0 +1,52 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+#map {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+@media screen {
+    .printWindow {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: 3px solid #ff7800;
+        width: 675px;
+        height: 983px;
+        pointer-events: none; /* THIS IS THE TRICK YOU SEEK */
+        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='sample_600x600.png', sizingMethod='scale');
+        background: none !important;
+    }
+}
+
+@media print {
+    .leaflet-control-zoom, .dialBox, .leaflet-popup, .screenOnly {
+        display: none;
+    }
+}
+
+.dialBox {
+    position: absolute;
+    z-index: 1000;
+    right: 10px;
+    top: 10px;
+}
+
+.dialBox .start {
+    font-size: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid gray;
+    background-color: white;
+    cursor: pointer;
+}

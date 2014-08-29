@@ -1,4 +1,4 @@
 nkart-one
 =========
 
-Print one page at the time from norgeskart.
+Print one A4 page at the time from norgeskart. See http://one.nkart.no

@@ -16,7 +16,7 @@ html, body {
 }
 
 @media screen {
-    .printWindow {
+    #printWindow {
         position: absolute;
         left: 0;
         top: 0;
@@ -26,6 +26,20 @@ html, body {
         pointer-events: none; /* THIS IS THE TRICK YOU SEEK */
         filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='sample_600x600.png', sizingMethod='scale');
         background: none !important;
+        text-align: right;    
+    }
+
+    #close {
+        position: absolute;
+        left: 650px;
+        top: 0;
+        background: #ff7800;
+        border: none;
+        color: white;
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
     }
 }
 
@@ -38,7 +52,7 @@ html, body {
 .dialBox {
     position: absolute;
     z-index: 1000;
-    right: 10px;
+    left: 50px;
     top: 10px;
 }
 

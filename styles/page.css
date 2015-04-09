@@ -56,7 +56,7 @@ html, body {
     top: 10px;
 }
 
-.dialBox .start {
+.dialBox #start {
     font-size: 30px;
     border-radius: 5px;
     padding: 10px;

@@ -78,7 +78,13 @@ L.control.scale({
 }).addTo(map);
 
 var close = document.getElementById('close').addEventListener('click', function () {
-    document.getElementById('printWindow').style.display = 'none';
-    document.getElementById('close').style.display = 'none';
-    return false;
-}, false);
+        document.getElementById('printWindow').style.display = 'none';
+        document.getElementById('close').style.display = 'none';
+        document.getElementById('start').style.display = 'none';
+        var elems = document.getElementsByClassName('leaflet-control')
+        for (var i = 0; i != elems.length; ++i) {
+            elems[i].style.display = 'none';
+        }
+        return false;
+    },
+    false);
